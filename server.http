@@ -1,0 +1,35 @@
+post http://localhost:3000/register
+
+###
+send request
+post http://localhost:3000/login
+
+###
+send request 
+get http://localhost:3000/tasks
+Authorization:Bearer <token> 
+
+###
+send request 
+post http://localhost:3000/tasks 
+{
+  "title": "Task Title",
+  "description": "Task Description",
+  "status": "completed",
+  "assignee_id": 1,
+}
+
+###
+send request 
+get http://localhost:3000/tasks/:id 
+
+###
+send request
+put http://localhost:3000/tasks/:id
+{
+    "status":"completed"
+}
+
+###
+send request 
+delete get http://localhost:3000/tasks/:id
