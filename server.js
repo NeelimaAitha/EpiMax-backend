@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const sqlite3 = require('sqlite3').verbose()
 const dbpath = './tasks.db'
 const app = express()
-const port = 3008
+const port = 3000
 const secretKey = 'abcdefghijkl'
 
 // Create a new SQLite database and open a connection
